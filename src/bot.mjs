@@ -32,3 +32,8 @@ process.on('SIGINT', () => {
     logger.warn('Terminating session!')
     process.exit(1)
 })
+
+process.on('SIGTERM', () => {
+    logger.info('Gracefully shutting down')
+    process.exit(0)
+})
