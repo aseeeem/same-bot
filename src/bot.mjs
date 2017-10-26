@@ -28,6 +28,10 @@ bot.on('message', (user, userID, channelID, message, event) => {
     }
 })
 
+bot.on('disconnect', (err, code) => {
+    logger.warn(`Bot disconnected: ${err} | Error code: ${code}`)
+})
+
 process.on('SIGINT', () => {
     logger.warn('Terminating session!')
     process.exit(1)
