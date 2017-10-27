@@ -30,6 +30,7 @@ bot.on('message', (user, userID, channelID, message, event) => {
 
 bot.on('disconnect', (err, code) => {
     logger.warn(`Bot disconnected: ${err} | Error code: ${code}`)
+    bot.connect()
 })
 
 process.on('SIGINT', () => {
