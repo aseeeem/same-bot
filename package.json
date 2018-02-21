@@ -1,0 +1,23 @@
+{
+  "name": "discord-bot",
+  "version": "2.0.0",
+  "description": "It literally just says same",
+  "main": "index.js",
+  "repository": {
+    "url": "github:aseeeem/same-bot"
+  },
+  "scripts": {
+    "start": "node --experimental-modules src/bot.mjs"
+  },
+  "keywords": [
+    "discord.io",
+    "discord-bot",
+    "same"
+  ],
+  "author": "Asim Shamim",
+  "license": "ISC",
+  "dependencies": {
+    "discord.io": "github:aseeeem/discord.io",
+    "winston": "^2.4.0"
+  }
+}
